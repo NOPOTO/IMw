@@ -1,0 +1,237 @@
+-- DO NOT STEAL OR GET BAN
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "Fortress · FT TEAM",
+    LoadingTitle = "Fortress hub",
+    LoadingSubtitle = "Developed By FT team",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "FT mega hub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "qJJwWjYjwU", -- The Discord invite code, do not include discord.gg/
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "FT mega hub",
+       Subtitle = "Key System",
+       Note = "Key: https://link-target.net/460577/key-key-key"
+       FileName = "FT mega hub",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "RV8ZYJ-1LLACT-A8J36J-DXGJKL-V2TDTZ-41KPMF"
+    }
+ })
+
+ local Tab = Window:CreateTab("Main")
+ local Section = Tab:CreateSection("Main Section")
+
+ local Scripts = Window:CreateTab("Scripts")
+ local Section = Scripts:CreateSection("Scripts Section")
+
+ local Player = Window:CreateTab("Player")
+ local Section = Player:CreateSection("Player Section")
+
+Rayfield:Notify({
+   Title = "Discord Link Copied",
+   Content = "Discord Link Has Been Copied",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Discord",
+         Callback = function()
+            setclipboard("https://discord.gg/qJJwWjYjwU")
+      end
+   },
+},
+})
+
+ local Button = Tab:CreateButton({
+   Name = "Copy Discord Link",
+   Callback = function()
+      setclipboard("https://discord.gg/qJJwWjYjwU")  
+   end,
+})
+
+
+local Button = Tab:CreateButton({
+	Name = "Get Daily Key",
+	Callback = function()
+	   setclipboard("https://link-target.net/460577/key-key-key")  
+	end,
+ })
+
+local Button = Player:CreateButton({
+   Name = "Korblox",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/Vg1qCKrj"))()   
+   end,
+})
+
+local Button = Player:CreateButton({
+   Name = "Headless",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/rHf8W1XV"))()   
+   end,
+})
+
+local Button = Player:CreateButton({
+   Name = "Click To Teleport",
+   Callback = function()
+     loadstring(game:HttpGet('https://pastebin.com/raw/3Wdmp9CD'))()
+   end,
+})
+
+local Button = Player:CreateButton({
+   Name = "INF Yield",
+   Callback = function()
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+
+local Slider = Player:CreateSlider({
+   Name = "Walk Speed",
+   Range = {16, 250},
+   Increment = 1,
+   Suffix = "WalkSpeed",
+   CurrentValue = 16,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(s)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+   end,
+})
+
+local Slider = Player:CreateSlider({
+   Name = "JumpPower",
+   Range = {50, 250},
+   Increment = 1,
+   Suffix = "JumpPower",
+   CurrentValue = 50,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(s)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Driving Empire",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/UNISCRIPTG/WheelHub/main/Main", true))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Legends Of Speed",
+   Callback = function()
+    while wait() do
+                game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer("rebirthRequest")
+            end   
+    end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Arsenal",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniNoobie/MINI-HUB-V2/main/FINALLY%20UPDATED%20MINI%20HUB",true))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "The Survival Game",
+   Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/tsg.lua", true))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Mega Mansion Tycoon",
+   Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/laderite/zenx/main/scripts/Mega_Mansion_Tycoon.lua'),true))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Military Tycoon",
+   Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/OopssHub/main/Loader.lua"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Car Factory",
+   Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Cxetive/OptixHub/main/loader.lua"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Fat Simulator",
+   Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/VoxleHub/Voxle/main/FatSim'))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Car Dealership Tycoon",
+   Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/BlueLockSeason2/main/README.md"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Michael's Zombies",
+   Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/MichaelZombies.lua"))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "No Scope Arcade",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/WZnPL6jK"))()       
+end
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Heist Tycoon",
+   Callback = function()
+    while wait() do
+			game:GetService("ReplicatedStorage").Knit.Services.TycoonService.RF.PayIncome:InvokeServer(game:GetService("Players").LocalPlayer)
+	end   end
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Green Ville Dealership",
+   Callback = function()
+    getgenv().DealerAutoFarm = true
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Mstir16/legocheats/main/archive/Greenville/Roadmap%20Dealership%20Autofarm"))()   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Roblox Talent Show",
+   Callback = function()
+    	loadstring(game:HttpGet('https://raw.githubusercontent.com/78n/Amity/main/RobloxTalentShow.lua'))()
+end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Driving World",
+   Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/UNISCRIPTG/WheelHub/main/Main", true))()
+   end,
+})
+
+local Button = Scripts:CreateButton({
+   Name = "Da hood",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Scrvpter/Pluto/Lua/Loader.Lua', true))()
+   end,
+})
+
+Rayfield:LoadConfiguration()
